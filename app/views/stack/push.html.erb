@@ -1,0 +1,21 @@
+<div>
+
+  <%= @array.join '  ' %>
+  <br/>
+  <%#= @array.to_sentence %>
+  <br/>
+
+</div>
+
+<div>
+<%= form_tag( { :ation => 'push'} , { :method => :get  }) %>
+  <br/>
+  <b>Enter number:</b> <%= text_field_tag "num", "", "size" => 8 , :autofocus=>true %>
+  <br /><br/>
+<%= submit_tag( "Add" ) %>
+
+<a href=/stack/pop><button type="button">pop</button></a>
+<a href=/stack/max><button type="button">Max</button></a>
+<a href=/extras/mean><button type="button">Mean</button></a>
+
+</div>
